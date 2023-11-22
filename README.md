@@ -44,4 +44,4 @@ This is a simple and effective Resume Builder website. With this tool, users can
 4. **Access the Website:**
     Open your web browser and go to localhost:3000.
 5. **Contributing:**
-    If you want to contribute to this project, feel free to fork the repository and submit a pull request
+    If you want to contribute to this project, feel free to fork the repository and submit a pull request.
