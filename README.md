@@ -15,19 +15,20 @@ This is a simple and effective Resume Builder website. With this tool, users can
 ## Screenshots
 
 ### Home Page
-![Home Page](./screenshots/1.png)
+![Home Page](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/screenshots/1.png)
 
 ### Login Page
-![Login Page](screenshots/5.png)
+![Login Page](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/screenshots/5.png)
 
 ### Template Selection Page
-![Template Selection Page](screenshots/2.png)
+![Template Selection Page](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/screenshots/2.png)
 
 ### Final Resume Page
-![Final Resume Page](screenshots/3.png)
+![Final Resume Page](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/screenshots/3.png)
 
 ### Download Your Resume
-![Download Your Resume](screenshots/4.png)
+![Download Your Resume](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/screenshots/4.png)
+
 
 ## How to Use
 
