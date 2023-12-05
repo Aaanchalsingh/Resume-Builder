@@ -7,9 +7,11 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import Footer from "./Footer";
 
 function TemplateContent({ data, resumeRef, color }) {
   return (
+    <>
     <div className="fullbox">
       <div ref={resumeRef} className="boxtemplate">
         <div className="template-box1">
@@ -211,7 +213,10 @@ function TemplateContent({ data, resumeRef, color }) {
           </div>
         </div>
       </div>
+
     </div>
+     <Footer/>
+     </>
   );
 }
 

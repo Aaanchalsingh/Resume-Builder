@@ -68,19 +68,6 @@ function Content() {
     "West Bengal",
   ];
 
-  const randomCities = [
-    "Mumbai",
-    "Delhi",
-    "Bengaluru",
-    "Kolkata",
-    "Chennai",
-    "Hyderabad",
-    "Ahmedabad",
-    "Pune",
-    "Surat",
-    "Jaipur",
-  ];
-
   const navigate = useNavigate();
 
   const handleChange = (event) => {
@@ -224,17 +211,13 @@ function Content() {
       "email",
       "profession",
       "skills",
-      "hobbies",
       "city",
       "state",
       "zip",
       "Experience",
       "Achievements",
-      "about",
       "projects",
       "certifications",
-      "qualities",
-      "contactInformation",
       "linkedinId",
       "githubId",
       "photo",
@@ -258,7 +241,7 @@ function Content() {
 
   return (
     <div className="box1">
-      <h1 className="text-center contentheading">Fill Your Details</h1>
+      <h1 className="text-center contentheading"style={{fontFamily:"lobster",fontWeight:"bold"}}>Fill Your Details</h1>
       <div className="boxcontainer">
         <div className="personal_details">Personal Details</div>
         <form className="row g-3 needs-validation" onSubmit={handleSubmit}>
@@ -341,20 +324,15 @@ function Content() {
             <label htmlFor="validationCustom08" className="form-label">
               City
             </label>
-            <select
-              className="form-select in"
+            <input
+              type="text"
+              className="form-control in"
               id="validationCustom09"
               name="city"
               value={data.city}
               onChange={handleChange}
-            >
-              <option value="">Choose...</option>
-              {randomCities.map((city) => (
-                <option key={city} value={city} style={{ color: "black" }}>
-                  {city}
-                </option>
-              ))}
-            </select>
+              placeholder="Enter Your City Name"
+            />
           </div>
           <div className="col-md-4">
             <label htmlFor="validationCustom10" className="form-label">
@@ -376,7 +354,7 @@ function Content() {
             </label>
             <input
               type="text"
-              className="form-control in"
+              className="form-control in text-white "
               id="validationCustom123"
               name="Achievements"
               value={data.Achievements.join(", ")}

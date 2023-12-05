@@ -12,7 +12,12 @@ import {
 
 function Footer() {
   return (
-    <div className="container">
+    <div className="container"
+    style={{
+      position:"absolute",
+      top:"91vh",
+      left:"1vw",
+    }}>
       <section className="footer text-white bg-transparent"style={{
           display:"flex",
           width:"100%",
@@ -63,9 +68,9 @@ function Footer() {
               <FontAwesomeIcon icon={faTelegramPlane} />
             </a>
           </div>
-            <h4 className="credit pt-4 text-xl font-semibold text-white border-t-2 border-white text-center pb-3">
+            <h5 className="credit font-bold text-white border-t-2 border-white text-center pt-2 " style={{fontWeight:"bold",fontFamily:"sans-serif"}}>
               All Right &copy; Reserved By Aanchal Singh
-            </h4>
+            </h5>
       </section>
     </div>
   );

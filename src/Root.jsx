@@ -14,7 +14,7 @@ function Root() {
           <span className="wave-3 root-heading">your</span>
           <span className="wave-4 root-heading">Resume</span>
         </div>
-        <Link to="/login" className="btn btn-dark px-3 py-2 root-link">
+        <Link to="/login" className="btn btn-dark px-3 root-link">
           Create my Resume
         </Link>
       </div>

@@ -9,6 +9,7 @@ import logo4 from "./Images/logo13.png";
 import logo5 from "./Images/logo14.png";
 import logo6 from "./Images/logo15.png";
 import logo7 from "./Images/logo20.png";
+import Footer from "./Footer";
 
 function ChooseTemplate() {
   const navigate = useNavigate();
@@ -46,6 +47,7 @@ function ChooseTemplate() {
           </span>
         ))}
       </div>
+      <Footer/>
     </>
   );
 }
