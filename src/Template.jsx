@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import ReactToPrint from 'react-to-print';
 import { useLocation } from 'react-router-dom';
-import './templatestyle.css';
+import './CSS/templatestyle.css';
 import { ChromePicker } from 'react-color';
 import { FaDownload } from 'react-icons/fa';
 import { AiOutlineBgColors } from 'react-icons/ai';
@@ -11,7 +11,7 @@ function Template() {
   const location = useLocation();
   const data = location.state?.data;
   const resumeRef = useRef();
-  const [selectedColor, setSelectedColor] = useState('#090853');
+  const [selectedColor, setSelectedColor] = useState(data?.color || '#090853');
   const [showColorPicker, setShowColorPicker] = useState(false);
 
   const handleColorButtonClick = () => {

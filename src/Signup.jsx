@@ -6,8 +6,8 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { auth, provider } from "./firebase.js";
-import './Style.css';
-import logo from './google.png'
+import './CSS/Style.css';
+import logo from './Images/google.png'
 function Signup() {
   const navigate = useNavigate();
   const [values, setValues] = useState({

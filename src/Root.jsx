@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Root.css";
-import "./Home.css";
+import "./CSS/Root.css";
+import "./CSS/Home.css";
 
 function Root() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./templatestyle.css";
+import "./CSS/templatestyle.css";
 import {
   FaGithub,
   FaLinkedin,

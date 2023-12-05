@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
 import { firestore } from "./firebase";
-import "./Content.css";
+import "./CSS/Content.css";
 
 function Content() {
+  const location = useLocation();
+  const data1 = location.state?.data;
   const [data, setData] = useState({
     fname: "",
     lname: "",
@@ -31,6 +34,7 @@ function Content() {
     collegeName: "",
     collegeYear: "",
     collegeCGPA: "",
+    color:data1?.color,
   });
 
   const statesList = [
@@ -120,14 +124,10 @@ function Content() {
     try {
       // Use "Resume" collection in Firestore
       const resumeCollection = collection(firestore, "Resume");
-
-      // Use "formattedData" directly without wrapping it in "data" property
       await addDoc(resumeCollection, {
         ...formattedData,
         timestamp: Date.now(),
       });
-
-      // Clear form data after successful submission
       setData({
         fname: "",
         lname: "",
@@ -216,7 +216,7 @@ function Content() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate("/template", { state: { data } });
+    navigate("/template", { state: { data} });
   };
 
   return (
