@@ -6,9 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #08022c;
   background: linear-gradient(#F64C72,rgb(5, 5, 239));
-  background: -webkit-linear-gradient(to right, #0d81b4, #282043, #0f2027);
 }
 .scope {
   position: relative;
