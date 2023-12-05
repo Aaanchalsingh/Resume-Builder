@@ -1,4 +1,5 @@
 # Resume Builder Website
+Check out on https://launch-your-dreams.netlify.app/
 
 ## Overview
 
@@ -10,7 +11,7 @@ This is a simple and effective Resume Builder website. With this tool, users can
 - **Template Selection:** Choose from a variety of pre-designed resume templates.
 - **Easy Editing:** Fill in your details using a user-friendly form.
 - **Instant Preview:** View your resume in real-time as you input your information.
-- **Downloadable Resume:** Download the final resume in a user-preferred format (e.g., PDF, Word).
+- **Downloadable Resume:** Download the final resume in a user-preferred format (PDF).
 
 ## Screenshots
 
@@ -41,6 +42,6 @@ This is a simple and effective Resume Builder website. With this tool, users can
 3. **Run the Application:**
     npm start
 4. **Access the Website:**
-    Open your web browser and go to https://launch-your-dreams.netlify.app/.
+    Open your web browser and go to localhost:3000.
 5. **Contributing:**
     If you want to contribute to this project, feel free to fork the repository and submit a pull request.
