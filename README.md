@@ -15,7 +15,7 @@ This is a simple and effective Resume Builder website. With this tool, users can
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/1.png)
+![Home Page](./screenshots/1.png)
 
 ### Login Page
 ![Login Page](screenshots/5.png)
