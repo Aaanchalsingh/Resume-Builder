@@ -7,6 +7,7 @@ import {
 import { auth, provider } from "./firebase.js";
 import './CSS/Style.css';
 import logo from './Images/google.png'
+import Footer from "./Footer.jsx";
 function Login() {
   const navigate = useNavigate();
   const [values, setValues] = useState({
@@ -91,6 +92,7 @@ function Login() {
         style={{ height: "50px", width: "250px", borderRadius: "10px" }}
         onClick={handleClick}
       />
+      <Footer/>
     </div>
   );
 }

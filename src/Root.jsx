@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 import "./CSS/Root.css";
 import "./CSS/Home.css";
 
@@ -17,6 +18,8 @@ function Root() {
           Create my Resume
         </Link>
       </div>
+      <Footer/>
+
     </>
   );
 }
