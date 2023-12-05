@@ -5,6 +5,8 @@ import {
   signInWithEmailAndPassword
 } from "firebase/auth";
 import { auth, provider } from "./firebase.js";
+import './Style.css';
+import logo from './google.png'
 function Login() {
   const navigate = useNavigate();
   const [values, setValues] = useState({
@@ -50,7 +52,7 @@ function Login() {
       });
   };
   return (
-    <div className="container">
+    <div className="container12">
       <div className="innerBox">
         <h1 className="heading">Login</h1>
         <label htmlFor="email">Email</label>
@@ -78,13 +80,13 @@ function Login() {
           <p>
             Don't have an account?{" "}
             <span>
-              <Link to="/">Sign up</Link>
+              <Link to="/Signup">Sign up</Link>
             </span>
           </p>
         </div>
       </div>
       <img
-        src="google.png"
+        src={logo}
         alt=""
         style={{ height: "50px", width: "250px", borderRadius: "10px" }}
         onClick={handleClick}

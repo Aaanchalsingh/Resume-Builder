@@ -6,7 +6,8 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { auth, provider } from "./firebase.js";
-
+import './Style.css';
+import logo from './google.png'
 function Signup() {
   const navigate = useNavigate();
   const [values, setValues] = useState({
@@ -58,7 +59,7 @@ function Signup() {
   };
 
   return (
-    <div className="container">
+    <div className="container12">
       <div className="innerBox">
         <h1 className="heading">Signup</h1>
         <label htmlFor="Name">Name</label>
@@ -100,7 +101,7 @@ function Signup() {
         </div>
       </div>
           <img
-            src="google.png"
+            src={logo}
             alt=""
             style={{ height: "50px", width: "250px" ,borderRadius:"10px"}}
             onClick={handleClick}
