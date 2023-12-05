@@ -18,7 +18,7 @@ This is a simple and effective Resume Builder website. With this tool, users can
 ![Home Page](https://github.com/Aaanchalsingh/Resume-Builder/screenshots/1.png)
 
 ### Login Page
-![Login Page](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/screenshots/5.png)
+![Login Page](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/5.png)
 
 ### Template Selection Page
 ![Template Selection Page](https://github.com/Aaanchalsingh/Resume-Builder/raw/main/screenshots/2.png)
