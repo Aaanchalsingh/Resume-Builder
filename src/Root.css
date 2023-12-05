@@ -1,0 +1,126 @@
+.root-box {
+  background-image: url("./hero.jpeg");
+  background: 10% 10%;
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: aliceblue;
+  text-align: center;
+  overflow: hidden;
+}
+
+.root-link {
+  margin-top: 10%;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: 700;
+}
+
+.root-link:hover {
+  background-color: yellow;
+  color: black;
+  box-shadow: 0px 8px 2px black;
+}
+
+.root-heading {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-left: 2%;
+
+}
+
+span {
+  color: yellow;
+}
+.waveTextAnimated {
+  margin-top: 0.6em;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  margin-left: 35%;
+}
+
+.waveTextAnimated span {
+  display: inline-block;
+}
+
+.waveTextAnimated .wave-1 {
+  animation: wave-text 1s ease-in-out infinite 0s;
+}
+
+.waveTextAnimated .wave-2 {
+  animation: wave-text 1s ease-in-out infinite 0.1s;
+}
+
+.waveTextAnimated .wave-3 {
+  animation: wave-text 1s ease-in-out infinite 0.2s;
+}
+
+.waveTextAnimated .wave-4 {
+  animation: wave-text 1s ease-in-out infinite 0.3s;
+}
+
+.waveTextAnimated .wave-5 {
+  animation: wave-text 1s ease-in-out infinite 0.4s;
+}
+
+@keyframes wave-text {
+  0% {
+    transform: translateY(0em);
+  }
+  60% {
+    transform: translateY(-0.6em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+@-webkit-keyframes wave-text {
+  00% {
+    transform: translateY(0em);
+  }
+  60% {
+    transform: translateY(-0.6em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+@keyframes wave-text {
+  00% {
+    transform: translateY(0em);
+  }
+  60% {
+    transform: translateY(-0.6em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+@media (max-width: 600px) {
+  * {
+    font-family: sans-serif;
+  }
+  #root-heading {
+    position: absolute;
+    overflow: hidden;
+    top: 15%;
+  }
+  .root-box .btn {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}
