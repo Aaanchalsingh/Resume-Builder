@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
 import { firestore } from "./firebase";
@@ -34,7 +34,7 @@ function Content() {
     collegeName: "",
     collegeYear: "",
     collegeCGPA: "",
-    color:data1?.color,
+    color: data1?.color,
   });
 
   const statesList = [
@@ -162,7 +162,6 @@ function Content() {
     }
   };
 
-
   const handleSkillsChange = (event) => {
     // eslint-disable-next-line
     const { name, value } = event.target;
@@ -216,7 +215,45 @@ function Content() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate("/template", { state: { data} });
+
+    // Check if all required fields are filled
+    const requiredFields = [
+      "fname",
+      "lname",
+      "phone",
+      "email",
+      "profession",
+      "skills",
+      "hobbies",
+      "city",
+      "state",
+      "zip",
+      "Experience",
+      "Achievements",
+      "about",
+      "projects",
+      "certifications",
+      "qualities",
+      "contactInformation",
+      "linkedinId",
+      "githubId",
+      "photo",
+      "tenthPercentage",
+      "twelfthPercentage",
+      "collegeName",
+      "collegeYear",
+      "collegeCGPA",
+    ];
+
+    const unfilledFields = requiredFields.filter((field) => !data[field]);
+
+    if (unfilledFields.length > 0) {
+      alert(
+        `Please fill in the following fields: ${unfilledFields.join(", ")}`
+      );
+    } else {
+      navigate("/template", { state: { data } });
+    }
   };
 
   return (
