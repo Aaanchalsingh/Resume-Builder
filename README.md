@@ -3,7 +3,7 @@ Check out on https://launch-your-dreams.netlify.app/
 
 ## Overview
 
-This is a simple and effective Resume Builder website. With this tool, users can easily create professional-looking resumes by following a straightforward process: signing up, selecting a template, filling in personal details, and generating the final resume.
+This is a simple and effective Resume Builder website. With this tool, users can easily create professional-looking resumes by following a straightforward process: signing up, selecting a template, filling in personal details,and generating the final resume.
 
 ## Features
 
